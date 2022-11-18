@@ -1,0 +1,13 @@
+
+<p *ngIf="!arrr">hii</p>
+
+<div>
+    <div *ngFor="let a of abc;let i = index; let first = first ;let last = last;" style="background-color: blue;" (click)="toSend()">
+        <div *ngIf="!arrr">
+            <div *ngIf="last">{{a}}</div>
+        </div>
+        <div *ngIf="arrr">
+            <div>{{a}}</div>
+        </div>
+    </div>
+</div>
